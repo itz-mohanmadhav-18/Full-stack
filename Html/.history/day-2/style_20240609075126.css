@@ -1,0 +1,25 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+a {
+    color:green;
+    text-decoration: none;
+}
+#header{
+    background: black;
+}
+#footer
+{
+    text-align: right;
+    background: yellow;
+}
+#header,#footer{
+    padding: 20px;
+}
+#header>a{
+    margin-right: 30px;
+}
+#footer>a{
+    margin-left: 30px;
+}
