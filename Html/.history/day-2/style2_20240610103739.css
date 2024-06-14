@@ -1,0 +1,31 @@
+*{
+    padding: 0px;
+    margin:0px;
+    text-decoration: none;
+}
+.body{
+    margin: 10px;
+
+}
+h1{
+    margin-top: 20px;
+    font-size: 60px;
+}
+#designation{
+    font-size: 25px;
+    
+}
+.social-links{
+    margin-top:20px;
+
+}
+a{
+    border:3px solid green;
+    color: green;
+    border-radius: 5px;
+    padding: 5px;
+}
+p{
+    font-size: 16px;
+    margin-top:5px
+}

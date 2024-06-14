@@ -1,6 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-
 *{
     padding:0px;
     margin: 0px;
@@ -41,8 +38,7 @@ a {
 h1{
     font-size:80px;
     margin-bottom: 60px;
-    font-family: gigi;
-    font-weight: 90;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 p{
     font-size: 40px;
