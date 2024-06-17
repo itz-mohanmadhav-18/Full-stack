@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Make sure this is included in the universal selector */
+}
+
+div {
+    background: red;
+    height: 500px;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding is included in the height */
+    overflow: auto; /* Allow scrollbars if content exceeds height */
+}

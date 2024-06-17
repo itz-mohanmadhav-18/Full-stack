@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+div {
+    background: red;
+    padding : 10px;
+    height: 500px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+div > * {
+    background: yellow;
+    margin :10px;
+}

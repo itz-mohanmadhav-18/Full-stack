@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+a {
+    color: rgb(51, 204, 51);
+    margin-left: 20px;
+}
+
+#header {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#footer {
+    background: yellow;
+    padding: 20px;
+    align-items:end;
+}
+button{
+    background-color: rgb(51, 204, 51);
+    padding: 10px;
+    border:2px solid black;
+    border-radius: 5px;
+}
+#main{
+    padding: 50px 20px;
+}
+#container{
+    min-height: 100vh;
+}

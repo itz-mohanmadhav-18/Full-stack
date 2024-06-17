@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+a {
+    color: rgb(51, 204, 51);
+}
+
+#header {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer {
+    background: yellow;
+}
