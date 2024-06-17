@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+.card{
+    display: flex;
+    max-width: 500px;
+    border: 5px solid black;
+    margin: 10px
+}
+.card img{
+    min-width: 50%;
+}
