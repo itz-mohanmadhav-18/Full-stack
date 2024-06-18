@@ -13,8 +13,8 @@
     align-items: center;
     padding: 10px;
 }
-#header img {
-    height: 40px;
+img {
+    /* height: 40px; */
 }
 #footer img{
     height: 20px;
@@ -42,11 +42,6 @@ p{
 }
 #main{
     flex-grow: 1;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 *{
     padding: 0;

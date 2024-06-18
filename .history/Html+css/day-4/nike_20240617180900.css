@@ -43,10 +43,6 @@ p{
 #main{
     flex-grow: 1;
     padding: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 *{
     padding: 0;

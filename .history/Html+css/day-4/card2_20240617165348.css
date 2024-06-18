@@ -5,7 +5,7 @@
 }
 .card{
     display: flex;
-    max-width: 70%;
+    /* max-width: 70%; */
     border: 5px solid black;
     border-radius: 10px;
     padding: 5px;

@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration:none ;
+}
+
+#header{
+    display: flex;
+    height: 50px;
+    background-color: green;
+}
+#header img{
+    height: 100%;
+}
