@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+div {
+    background: green;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+p {
+    background: yellow;
+    border: 8px solid red;
+    padding: 30px 40px;
+}
+#p-2{
+    align-self: flex-end;
+}

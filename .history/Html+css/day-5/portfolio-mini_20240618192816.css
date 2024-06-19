@@ -1,0 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+#container{
+    background-color: grey;
+    padding: 20px;
+}

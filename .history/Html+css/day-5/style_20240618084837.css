@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+div {
+    background: green;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    row-gap: 5px;
+    column-gap: 40px;
+    width: 50%;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+
+
+}
+
+p {
+    background: yellow;
+    border: 8px solid red;
+    padding: 30px 40px;
+}
+#p-2{
+    order: 1;
+}
+
+#p-3{
+    font-size: 80px;
+}
+#p-1{
+    order:3
+}
