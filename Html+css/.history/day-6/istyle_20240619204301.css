@@ -8,12 +8,6 @@
     max-width: 500px;
     align-self: center;
 }
-.image{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
 h1{
     font-size: 40px;
 }
@@ -46,53 +40,24 @@ button{
 #cont{
     display: flex;
     flex-direction: column;
-    max-width: 800px;
-    margin: auto;
+
 }
-.thumbnails >img{
-    min-width: 0;
-}
-.thumbnails{
-    display: none;
-}
-body{
-    padding: 10px;
-}
-@media (min-width:750px) {
+@media (min-width:720px) {
     #cont{
         flex-direction: row-reverse;
         border: 2px solid gray;
         border-radius: 20px;
         padding: 30px;
         margin: 10px;
-        margin: 20px auto;
-        /* max-width: 800px; */
     }    
 
-    #details{
-        width: 60%;
-        max-width: 800px;
+    #details:{
+        width: 50%;
     }
     button{
         align-self: flex-start;
     }
-    .image{
+    .images{
         width: 40%;
-    }
-    .thumbnails{
-        width: 100%;
-        display: flex;
-        gap: 5px;
-    }
-}
-@media (min-width:900px){
-    h1{
-        font-size: 50px;
-    }
-    .price{
-        font-size: 35px;
-    }
-    .description{
-        font-size:20px ;
     }
 }

@@ -46,17 +46,13 @@ button{
 #cont{
     display: flex;
     flex-direction: column;
-    max-width: 800px;
-    margin: auto;
+    max-width: 1000px;
 }
 .thumbnails >img{
     min-width: 0;
 }
 .thumbnails{
     display: none;
-}
-body{
-    padding: 10px;
 }
 @media (min-width:750px) {
     #cont{
@@ -65,7 +61,6 @@ body{
         border-radius: 20px;
         padding: 30px;
         margin: 10px;
-        margin: 20px auto;
         /* max-width: 800px; */
     }    
 
@@ -83,16 +78,5 @@ body{
         width: 100%;
         display: flex;
         gap: 5px;
-    }
-}
-@media (min-width:900px){
-    h1{
-        font-size: 50px;
-    }
-    .price{
-        font-size: 35px;
-    }
-    .description{
-        font-size:20px ;
     }
 }

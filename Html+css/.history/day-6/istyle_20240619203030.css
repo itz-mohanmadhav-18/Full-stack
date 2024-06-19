@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.cover{
+    width: 100%;
+    max-width: 500px;
+}
+h1{
+    font-size: 40px;
+}
+.price{
+    font-size: 28px;
+}
+.description{
+    font-size: 16px;
+    color: gray;
+}
+h1, .price , .description{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button{
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    padding:15px 40px ;
+    border-radius: 5px;
+    align-self: center;
+}
+#container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:15px;
+}

@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+h1{
+    color:blue;
+}
+@media (min-width:500px) {
+    h1{
+        color: red;
+    }
+}

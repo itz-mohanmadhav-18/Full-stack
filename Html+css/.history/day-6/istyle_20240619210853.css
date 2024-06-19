@@ -88,11 +88,6 @@ body{
 @media (min-width:900px){
     h1{
         font-size: 50px;
-    }
-    .price{
-        font-size: 35px;
-    }
-    .description{
-        font-size:20px ;
+        
     }
 }

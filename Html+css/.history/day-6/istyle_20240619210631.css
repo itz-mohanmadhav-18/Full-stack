@@ -55,9 +55,6 @@ button{
 .thumbnails{
     display: none;
 }
-body{
-    padding: 10px;
-}
 @media (min-width:750px) {
     #cont{
         flex-direction: row-reverse;
@@ -65,7 +62,7 @@ body{
         border-radius: 20px;
         padding: 30px;
         margin: 10px;
-        margin: 20px auto;
+        margin: auto;
         /* max-width: 800px; */
     }    
 
@@ -83,16 +80,5 @@ body{
         width: 100%;
         display: flex;
         gap: 5px;
-    }
-}
-@media (min-width:900px){
-    h1{
-        font-size: 50px;
-    }
-    .price{
-        font-size: 35px;
-    }
-    .description{
-        font-size:20px ;
     }
 }
