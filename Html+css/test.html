@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            vertical-align: top;
+        }
+        input, select, textarea {
+            width: 200px;
+            padding: 5px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form id="personalInfoForm">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="non-binary">Non-binary</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="instagram">Instagram Profile</label>
+            <input type="url" id="instagram" name="instagram">
+        </div>
+
+        <div class="form-group">
+            <label for="favColor">Favourite Color</label>
+            <input type="color" id="favColor" name="favColor">
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Date of birth</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+
+        <div class="form-group">
+            <label for="tob">Time of birth</label>
+            <input type="time" id="tob" name="tob">
+        </div>
+
+        <div class="form-group">
+            <label>Which type of person are you</label><br>
+            <input type="radio" id="introvert" name="personality" value="introvert">
+            <label for="introvert">Introvert</label>
+            <input type="radio" id="extrovert" name="personality" value="extrovert">
+            <label for="extrovert">Extrovert</label>
+        </div>
+
+        <div class="form-group">
+            <label for="class12Percentage">How much percentage you got in class 12?</label><br>
+            <input type="range" id="class12Percentage" name="class12Percentage" min="0" max="100">
+        </div>
+
+        <div class="form-group">
+            <label>What are your Qualities</label><br>
+            <input type="checkbox" id="quality1" name="qualities" value="sarkari_naukri">
+            <label for="quality1">Sarkari naukri</label><br>
+            <input type="checkbox" id="quality2" name="qualities" value="handsome_beautiful">
+            <label for="quality2">Handsome/Beautiful</label><br>
+            <input type="checkbox" id="quality3" name="qualities" value="stylish_hairs">
+            <label for="quality3">Stylish Hairs</label><br>
+            <input type="checkbox" id="quality4" name="qualities" value="fair_skin">
+            <label for="quality4">Fair Skin</label>
+        </div>
+
+        <div class="form-group">
+            <label for="profileImage">Upload your image</label>
+            <input type="file" id="profileImage" name="profileImage">
+        </div>
+
+        <div class="form-group">
+            <label for="partnerName">What is the name of your partner?</label><br>
+            <input type="password" id="partnerName" name="partnerName" placeholder="partner's name">
+        </div>
+
+        <div class="form-group">
+            <label for="aboutYourself">Tell more about yourself</label><br>
+            <textarea id="aboutYourself" name="aboutYourself" placeholder="enter text here" rows="4" cols="30"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="formDateTime">Date and time of filling this form</label>
+            <input type="datetime-local" id="formDateTime" name="formDateTime">
+        </div>
+    </form>
+</body>
+</html>

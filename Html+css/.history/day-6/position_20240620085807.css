@@ -1,0 +1,33 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+}
+.red{
+    background: red;
+}
+.green{
+    background: green;
+}
+.blue{
+    background:blue;
+}
+.one{
+    background:lightpink;
+}
+.two{
+    background:yellow;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
+.three{
+    background: hotpink;
+}
+.four{
+    background:purple;
+}
+.five{
+    background: navajowhite;
+}

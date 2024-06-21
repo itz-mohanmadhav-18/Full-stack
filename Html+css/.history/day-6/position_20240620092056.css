@@ -1,0 +1,39 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+}
+.red{
+    background: red;
+    /* position: relative; */
+}
+.green{
+    background: green;
+    /* position: relative; */
+}
+.blue{
+    background:blue;
+    /* position: relative; */
+}
+.one{
+    background:lightpink;
+}
+.two{
+    background:yellow;
+    /* position: absolute; */
+  
+    
+}
+.three{
+    background: hotpink;
+}
+.four{
+    background:purple;
+}
+.five{
+    background: navajowhite;
+    /* position: absolute; */
+}
+body{
+    height: 200vh;
+}

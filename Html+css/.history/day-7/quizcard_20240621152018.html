@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #quiz {
+            border: 2px solid black;
+            padding: 10px 50px;
+            background-color: aqua;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            
+            gap:20px;
+        }
+        #cols{
+            display: flex;
+            justify-content: space-between;
+        }
+        button{
+            width: 20%;
+            align-self: center;
+            background-color: rgb(10, 219, 219);
+            padding: 10px 30px;
+            border-radius: 10px;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="quiz">
+        <h1 id="question">
+            Coding seekhne ki sabse acchi jagah ?
+        </h1>
+        <div id="cols">
+            <div id="option">
+                <input type="radio" id="1">
+            <label for="1">Codeyogi</label>
+            </div>
+            <div id="option">
+                <input type="radio" id="2">
+            <label for="1">Jor se bolo CodeYogi</label>
+            </div>
+        </div>
+        <div id="cols">
+            <div id="option">
+                <input type="radio" id="3">
+            <label for="1">Sarre bolo CodeYogi</label>
+            </div>
+            <div id="option">
+                <input type="radio" id="4">
+            <label for="1">Maa kasam CodeYogi</label>
+            </div>
+        </div>
+        <button>Submit</button>
+
+    </div>
+</body>
+
+</html>
