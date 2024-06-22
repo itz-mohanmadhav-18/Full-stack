@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+       #container{
+        width: 400px;
+        margin: 40px auto;
+        background-color: rgb(71, 71, 141);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 100px 40px ;
+       }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form action="https://codeyogi.io/save" method="post">
+            <h1>Join CodeYogi</h1>
+            <div id="formEle">
+                <label for="name">Your Name</label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div id="formEle">
+                <label for="Email">Your Email</label><br>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div id="formEle">
+                <label for="password">password</label><br>
+                <input type="password" id="password" name="pass" required minlength="8" maxlength="16">
+            </div>
+            <div id="formEle">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
