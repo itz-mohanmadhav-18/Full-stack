@@ -1,0 +1,70 @@
+<!-- creating a unit converter using html,css,js -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="container" class="m-5">
+    <div id="inputs">
+      <input 
+        class="border p-2 rounded-md"
+        type="number" 
+        id="num1" 
+        placeholder="Enter the number"/>
+      <select name="conversionOf" id="unit1">
+        <option value="km">Kilometer</option>
+        <option value="m">meter</option>
+        <option value="cm">centimeter</option>
+        <option value="mm">milimeter</option>
+      </select>
+      <p class="inline">
+        to
+      </p>
+      <select name="conversionOf" id="unit2">
+        <option value="km">Kilometer</option>
+        <option value="m">meter</option>
+        <option value="cm">centimeter</option>
+        <option value="mm">milimeter</option>
+      </select>
+      <button 
+        class="bg-green-400 text-white px-3 py-1 rounded-md"
+        onclick="doConversion()">
+        Submit
+      </button>
+    </div>
+    <div 
+      class="m-5 text-red-500 text-xl"
+      id="results"></div>
+  </div>
+  <script>
+    function doConversion(){
+      let num = parseFloat(document.getElementById('num1').value);
+      let unit1 = document.getElementById('unit1').value;
+      let unit2 = document.getElementById('unit2').value;
+      let results = document.getElementById('results');
+      let convertedValue = 0;
+      let inMeters = 0;
+      //converting value in meters
+      switch(unit1){
+        case 'km' : inMeters = num * 1000; break;
+        case 'm' : inMeters = num; break;
+        case 'cm' : inMeters = num / 100; break;
+        case 'mm' : inMeters = num / 1000; break;
+      }
+      //converting value in desired unit
+      switch(unit2){
+        case 'km' : convertedValue = inMeters / 1000; break;
+        case 'm' : convertedValue = inMeters;break;
+        case 'cm' : convertedValue = inMeters * 100; break;
+        case 'mm' : convertedValue = inMeters * 1000; break;
+      }
+      results.innerHTML = `${num} ${unit1} = ${convertedValue} ${unit2}`;
+    }
+  </script>
+</body>
+</html>

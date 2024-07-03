@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="m-5 text-xl"> 
+    <input 
+      class= "border p-2 rounded-md"
+      type="text" 
+      id="fruit" 
+      placeholder="Enter your favourite fruit"/>
+    <button
+      class="bg-green-400 text-white px-2 py-1 rounded-md"
+      id="fruitBtn"
+      onclick="checkGuess()">
+      Submit
+    </button>
+    <div id="results">
+      
+    </div>
+  </div>
+    
+  <script>
+    // Initialize game variables
+    let favouriteFruit = 'apple'; // Set the correct answer
+    let results = document.getElementById('results');
+    let guessedFruit = document.getElementById('fruit').value;
+    let points = 0; // Initialize score
+    let trials = 0; // Track number of attempts
+    let gameOver = false; // Flag to check if game has ended
+
+    function checkGuess() {
+        // Check if game has already ended
+        if (gameOver) {
+            results.innerHTML = 'The game is over. Refresh to play again.';
+            return;
+        }
+
+        guessedFruit = document.getElementById('fruit').value.toLowerCase();
+        
+        // Validate input
+        if(guessedFruit === ''){
+          results.innerHTML = 'Please enter a fruit';
+          return;   
+        }
+
+        trials++; // Increment attempt counter
+
+        if(guessedFruit === favouriteFruit){
+                // Correct guess - assign points based on attempt number
+                switch(trials){
+                  case 1:points=50;break;
+                  case 2:points=40;break;
+                  case 3:points=30;break;
+                  case 4:points=20;break;
+                  case 5:points=10;break;
+                }  
+            results.innerHTML = `You earned ${points} points.`;
+            gameOver = true; // End game on correct guess
+        } 
+        else if(trials < 5) {
+              // Incorrect guess, but attempts remain
+              results.innerHTML = `Try Again , You have ${5-trials} trials left.`;
+        } 
+        else{
+              // All attempts used
+              results.innerHTML = `You lost.`;
+              gameOver = true;
+        }
+    }
+   
+  </script>
+</body>
+</html>
